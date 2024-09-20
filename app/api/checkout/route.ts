@@ -25,10 +25,7 @@ export async function POST(req: NextRequest) {
       shipping_address_collection: {
         allowed_countries: ["UA"],
       },
-      shipping_options: [
-        { shipping_rate: "shr_1MfufhDgraNiyvtnDGef2uwK" },
-        { shipping_rate: "shr_1OpHFHDgraNiyvtnOY4vDjuY" },
-      ],
+      shipping_options: [{ shipping_rate: "shr_1PzveXRpy9NU2TESN3Bhqp0U" }],
       line_items: cartItems.map((cartItem: any) => ({
         price_data: {
           currency: "uah",
