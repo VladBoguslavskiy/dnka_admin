@@ -37,3 +37,4 @@ export const getSalesPerMonth = async () => {
 
   return graphData
 }
+
