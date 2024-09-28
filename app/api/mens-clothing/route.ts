@@ -9,9 +9,7 @@ export const GET = async (req: NextRequest) => {
  
 	  const { searchParams } = new URL(req.url);
 	  const tag = searchParams.get("tags");
- 
-	  console.log("Received tag:", tag); // Додайте цей рядок
- 
+  
 	  let filter = {};
 	  if (tag) {
 		 filter = { tags: tag }; // Тут фільтруємо за тегом
